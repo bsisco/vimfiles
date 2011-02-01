@@ -1,0 +1,12 @@
+This is my ~/vimfiles for windows.
+plugins:
+ * pathogen
+ * syntastic
+ * fugitive
+ * conque term
+ * snipMate
+ * surround
+ * taglist
+ * nerdcommenter
+ * nerdtree
+ * lodgeit

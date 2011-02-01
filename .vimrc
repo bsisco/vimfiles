@@ -5,7 +5,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 set ffs=unix,dos,mac "Default file types
 set encoding=utf-8
-set cpoptions=$cF
+"set cpoptions=$cF
 set guioptions-=T
 filetype plugin indent on				" Let filetype plugins indent for me
 
@@ -282,7 +282,7 @@ endif
 let g:screen_size_restore_pos = 1
 let g:screen_size_by_vim_instance = 1
 
-inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+"inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 function! s:align()
   let p = '^\s*=\s.*\s=\s*$'
@@ -294,16 +294,6 @@ function! s:align()
     call search(repeat('[^=]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" => Cope
-"" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" " Do :help cope if you are unsure what cope is. It's super useful!
-"inoremap <expr> <CR>        pumvisible() ? "\<C-y>" : "\<CR>"
-"inoremap <expr> <Down>      pumvisible() ? "\<C-n>" : "\<Down>"
-"inoremap <expr> <Up>        pumvisible() ? "\<C-p>" : "\<Up>"
-"inoremap <expr> <PageDown>  pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
-"inoremap <expr> <PageUp>    pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
 
 inoremap <C-Space> <C-x><C-o>
 map <silent><C-Left> <C-T>
@@ -360,7 +350,6 @@ nmap <LocalLeader>gb :Gblame<cr>
 nmap <LocalLeader>gc :Gcommit -m<cr>
 nmap <LocalLeader>gm :Gmove<cr>
 nmap <LocalLeader>gg :Ggrep<cr>
-"nmap <LocalLeader>gr :Gread<cr>
 nmap <LocalLeader>gp :Gsplit<cr>
 nmap <LocalLeader>gl :Glog<cr>
 nmap <LocalLeader>grm :Gremove<cr>
