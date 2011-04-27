@@ -28,3 +28,12 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = http://github.com/scrooloose/syntastic.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = http://github.com/godlygeek/tabular.git
+[submodule "bundle/jslint"]
+	path = bundle/jslint
+	url = http://github.com/hallettj/jslint.vim.git
+[submodule "bundle/pep8"]
+	path = bundle/pep8
+	url = http://github.com/nvie/vim-pep8
